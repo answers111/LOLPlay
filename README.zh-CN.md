@@ -2,6 +2,8 @@
 
 [English](README.md) | **简体中文**
 
+[项目主页 / Homepage](https://answers111.github.io/LOL-Play-homepage/)
+
 LOL-Play 是在本机运行的英雄联盟智能体评测项目。它负责准备自定义对局，让视觉智能体操作桌面，并通过 Live Client Data API 对游戏目标评分。项目包含覆盖 36 位英雄的 36 个任务，以及 5 种智能体模式。
 
 ## 运行与评分流程
