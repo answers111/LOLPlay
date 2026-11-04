@@ -2,7 +2,7 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
-[Homepage](https://answers111.github.io/LOL-Play-homepage/)
+[Homepage](https://answers111.github.io/LOL-Play-homepage/) | [Paper](https://arxiv.org/abs/2611.03685)
 
 LOL-Play is a local League of Legends agent evaluation project. It prepares custom games, lets vision agents operate the desktop, and scores gameplay objectives using the Live Client Data API. The project includes 36 tasks across 36 champions and five agent modes.
 
