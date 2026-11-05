@@ -41,9 +41,11 @@ OPENAI_API_KEY=your_api_key
 先检查本地配置，再运行任务：
 
 ```powershell
-python run.py --agent prompt --task task001 --check
-python run.py --agent prompt --task task001
+python run.py --agent prompt --action-space computer_13 --task task001 --check
+python run.py --agent prompt --action-space computer_13 --task task001
 ```
+
+对 `prompt` 和 `prompt-stream`，指定 `--action-space computer_13` 时，智能体返回 JSON 动作；省略 `--action-space` 时，默认使用 `pydirectinput`，智能体返回 Python 代码。
 
 `--check` 会构造所选智能体和桌面环境，不启动游戏，也不请求模型动作。它检查本地配置，不验证远端模型权限。单任务命令的退出码：0 表示任务成功，1 表示任务未成功，2 表示配置错误。
 

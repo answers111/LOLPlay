@@ -41,9 +41,11 @@ OPENAI_API_KEY=your_api_key
 Check local configuration, then run a task:
 
 ```powershell
-python run.py --agent prompt --task task001 --check
-python run.py --agent prompt --task task001
+python run.py --agent prompt --action-space computer_13 --task task001 --check
+python run.py --agent prompt --action-space computer_13 --task task001
 ```
+
+For `prompt` and `prompt-stream`, `--action-space computer_13` makes the agent return JSON actions. If you omit `--action-space`, these agents default to `pydirectinput` and return Python code.
 
 `--check` constructs the selected agent and desktop environment without starting a game or requesting model actions. It checks local configuration; it does not verify remote model access. A single-task command exits with 0 for task success, 1 for an unsuccessful task, or 2 for a configuration error.
 
